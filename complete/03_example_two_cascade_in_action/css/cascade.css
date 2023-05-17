@@ -1,0 +1,37 @@
+/* position */
+
+h2 {
+    color:purple /* !important - don't use this */  
+}
+
+#test {
+    color: red; 
+}
+
+/*specificity*/
+
+.wrapper {
+    background-color: #BADA55; 
+}
+
+div {
+    background-color: #000; 
+}
+
+/* inheritance - not part of the cascade, but a related concept */
+
+body {
+   color: purple; 
+   height: 100px;  
+}
+
+
+
+
+
+
+
+
+
+
+

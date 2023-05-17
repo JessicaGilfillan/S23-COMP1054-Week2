@@ -1,0 +1,76 @@
+/* Welcome to Week 2! Let's start off with a little CSS practice. Please complete the following tasks 
+
+1.) Include this stylesheet (intro.css) in your HTML document
+
+DONE! 
+
+2.) Add the followng styles to the div element */
+
+.wrapper { /*use .wrapper as it is more specific that div */ 
+    width: 90%;
+    margin: 0 auto;
+    background: #BADA55;
+}
+
+
+/* What changes when you add these styles?
+
+width of the div is set to 90%, 
+horizontally centred the div by using margin: 0 auto
+set the background to #BADA55
+
+3.)Change the size of the h1 to twice the size of the root/html element. The root element is 16px. */
+
+h1 {
+    font-size: 2rem;
+}
+
+/* by default, the h1 is already 32px, however, we can still set it for example purposes./
+/* can use px, but relative units (em, rem is best). Rem is always relative to the root (html) element (i.e. 2rem = 16 x 2 = 32px equivalent) 
+
+
+/*4.)Change all h2 elements to the hex colour #c0ffee */
+
+h2 {
+    color: #c0ffee;
+}
+
+
+/*5.) Change the third h2 element color to #ff4040 (try to do this without adding an ID or a CLASS) */
+
+/*section:nth-of-type(3) h2 {
+color: #ff4040;
+}*/
+
+main section + section + section h2 {
+    color: #ff4040;
+}
+
+/* can accomplish this using multiple approaches/strategies */ 
+
+
+/*6.) What is the relationship between the footer element and the main element (child, ancestor, sibling)? 
+
+sibling 
+
+
+7.) What is the relationship between the ol element and the li element (child, ancestor, sibling)? 
+
+child 
+
+8.) Bonus challenge - change the size and color of the second li element in the order list and unordered list to #8A2BE2 and 20px; 
+
+*/
+
+/*section:nth-of-type(2) ul li:nth-child(2),
+section:nth-of-type(3) ol li:nth-child(2) {
+    color: #8A2BE2;
+    font-size: 20px;
+} */ 
+
+li:nth-child(2) {
+    color: #8A2BE2;
+    font-size: 20px;
+}
+
+/* can do this using different strategies/types of selectors */ 
